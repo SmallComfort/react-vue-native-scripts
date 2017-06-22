@@ -43,4 +43,4 @@ There should be a file named `VueComponent.vue` in the corresponding folder, and
 
 In react-native packager, `import VueComponent from './VueComponent'` equal to `import VueComponent from './VueComponent.js'`.
 
-[demo]()
+[demo](https://github.com/SmallComfort/HackerNews)
