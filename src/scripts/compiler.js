@@ -97,7 +97,7 @@ function action (name) {
       output += '\n\n';
 
       // add render funtion
-      output += addvm(templateParsed.render);
+      output += beautify(addvm(templateParsed.render), { 'indent_size': 2 });
       output += '\n\n';
 
       // parse css
@@ -130,7 +130,7 @@ function action (name) {
       output += `export default ${constants.OBSERVER}(${constants.COMPONENT_BUILDED})`;
 
       // beautiful
-      output = beautify(output, { 'indent_size': 2 });
+      // output = beautify(output, { 'indent_size': 2 });
 
       fs.writeFile(name.replace(FILTER, '.js'), output, function (err) {
         if (err) {
